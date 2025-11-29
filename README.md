@@ -15,7 +15,7 @@ A web-based AI-powered code review and fixing tool built with **React**, **Monac
 
 ## Features
 
-- **Multi-language support**: C, C++, C#, JavaScript, TypeScript, Python, Java, PHP, Ruby, Go, Rust, Dart, Bash, Swift.
+- **Multi-language support**: C, C++, C#, JavaScript, TypeScript, Python, Java, PHP, Dart, Bash, Swift.
 - **AI code review**: Provides concise feedback in bullet points.
 - **Fix code button**: Automatically fixes the code and highlights corrected lines.
 - **Apply fix / Undo**: Apply AI-suggested fixes or revert to previous code state.

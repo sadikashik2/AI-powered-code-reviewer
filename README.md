@@ -1,35 +1,40 @@
-✔️ CheckMyCode — AI-Powered Code Reviewer
+# AI Code Review Tool
 
-CheckMyCode is a web application that helps developers review, fix, and understand their code using Gemini 2.5 Flash, providing fast and accurate suggestions.
+-------
+**Live Demo:**  https://ai-powered-code-reviewer-alpha.vercel.app/
 
-🚀 Features
+A web-based AI-powered code review and fixing tool built with **React**, **Monaco Editor**, and **Google Gemini 2.5 Flash API**. This app allows you to:
 
-AI-Based Code Review (Gemini 2.5 Flash) – Fast + accurate code suggestions
+- Paste or write code in multiple programming languages.
+- Get AI-generated code review feedback.
+- Automatically fix code issues suggested by AI.
+- Highlight corrected lines in the editor.
+- Undo and reapply fixes seamlessly.
 
-Smart Line Highlighting – Only corrected lines are highlighted (comments ignored)
+---
 
-Apply Fix / Undo Changes – Apply AI fixes instantly or revert
+## Features
 
-Multiple Language Support – Select from many languages via dropdown
+- **Multi-language support**: C, C++, C#, JavaScript, TypeScript, Python, Java, PHP, Ruby, Go, Rust, Dart, Bash, Swift.
+- **AI code review**: Provides concise feedback in bullet points.
+- **Fix code button**: Automatically fixes the code and highlights corrected lines.
+- **Apply fix / Undo**: Apply AI-suggested fixes or revert to previous code state.
+- **Line highlighting**: Only the exact corrected lines are highlighted.
+- **Mobile-friendly**: Switch between editor and AI response using tabs.
 
-VS Code-like Editor – Powered by Monaco Editor
+---
 
-Markdown Response Rendering – Clean, readable feedback
+## Tech Stack
 
-Responsive UI – Works smoothly on desktop & mobile
+- **React** – Frontend framework.
+- **Monaco Editor** – Code editor component.
+- **Tailwind CSS** – Styling.
+- **Google Gemini API** – AI for code review and fixes.
+- **react-select** – Language dropdown selector.
+- **react-spinners** – Loading indicators.
+- **diff** – Compute exact line changes for highlights.
 
-🔧 Technologies Used
+---
 
-React + Vite
 
-Monaco Editor
 
-Google Gemini 2.5 Flash Model
-
-React-Markdown + GFM
-
-Lucide Icons
-
-React-Select
-
-Custom Diff Algorithm

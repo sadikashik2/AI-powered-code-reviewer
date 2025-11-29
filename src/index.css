@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ----------------- React-Select compact helpers ----------------- */
+.langSelect__control {
+  min-height: 36px !important;
+}
+.langSelect__single-value {
+  font-size: 13px !important;
+}
+.langSelect__option {
+  font-size: 13px !important;
+}
+
+/* ----------------- Markdown code blocks ----------------- */
+.prose code {
+  background: transparent;
+  color: #e6edf3;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: monospace;
+}
+
+/* ----------------- Monaco Editor Highlights ----------------- */
+.highlight-line {
+  background-color: rgba(124, 58, 237, 0.3); /* soft purple highlight */
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.highlight-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-left: 3px solid #7c3aed; /* glowing left border */
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.7);
+}
+
+.highlight-line.fade {
+  animation: fadeHighlight 3s forwards;
+}
+
+@keyframes fadeHighlight {
+  0% { background-color: rgba(124, 58, 237, 0.3); }
+  100% { background-color: transparent; }
+}
+
+/* ----------------- Bullet Cards for Response Panel ----------------- */
+.bullet-card {
+  background-color: #2f3136; /* card background for all bullets */
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.bullet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  background-color: #383c46; /* slightly lighter on hover */
+}
+
+.bullet-headline {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #6638b4; /* purple headline bg */
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.bullet-description {
+  margin-left: 4px;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.bullet-description code {
+  background-color: rgba(255,255,255,0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* ----------------- Bullet Wrapper: spacing ----------------- */
+.bullet-wrapper {
+  margin: 14px 0; /* space between points */
+  line-height: 1.6;
+  padding: 6px;
+  border-radius: 8px;
+}
+/* Monaco Editor Highlights */
+.highlight-line {
+  background-color: rgba(124, 58, 237, 0.3); /* soft purple */
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.highlight-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #7c3aed; /* bright purple left border */
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.7);
+}
